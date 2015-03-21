@@ -22,8 +22,9 @@ def bool_to_str(bval):
         >>>import task_02.bool_to_str(")
         'No'
     """
-    answer = True
-    if answer:
-        return 'Yes'
+    if bval:
+        answer = 'Yes'
     else:
-        return 'No'
+        answer = 'No'
+
+    return answer
