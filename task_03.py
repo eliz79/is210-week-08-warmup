@@ -30,9 +30,6 @@ def lexicographics(to_analyze):
         split_two = words.split()
         length.append(len(split_two))
         t_length = len(split_one)
-        max_length = max(length)
-        min_length = min(length)
-        total = sum(length)
-        avg = total / decimal.Decimal(t_length)
-
-    return (max_length, min_length, avg)
+        overall_length = ((max(length), min(length)),
+                          (sum(length) / decimal.Decimal(t_length)))
+    return overall_length

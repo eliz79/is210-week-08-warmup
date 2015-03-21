@@ -24,8 +24,6 @@ def bool_to_str(bval):
     """
     answer = True
     if answer:
-        print 'Yes'
+        return 'Yes'
     else:
-        print 'No'
-
-    return answer
+        return 'No'
