@@ -2,8 +2,6 @@
 # *-* coding: utf-8 *-*
 """Docstring"""
 
-bval = raw_input('Is the sky blue? ')
-
 
 def bool_to_str(bval):
     """This is a docstring.
@@ -11,6 +9,7 @@ def bool_to_str(bval):
     Arg:
         bval(boolean): a boolean/boolean-like value that can evaluate
                        for true or false
+
     Return:
         To return a string 'Yes' for True, otherwise 'No' for False
 
@@ -23,10 +22,10 @@ def bool_to_str(bval):
         >>>import task_02.bool_to_str(")
         'No'
     """
-    return bval
+    answer = True
+    if answer:
+        print 'Yes'
+    else:
+        print 'No'
 
-if bval == True:
-    print 'Yes'
-
-else:
-    print 'No'
+    return answer

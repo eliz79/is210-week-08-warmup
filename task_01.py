@@ -18,7 +18,10 @@ def fibonacci(maxint):
         [0,1,1,2,3,5,8]
             
     """
-    a, b = 1, 3
-    while b < 10:
+    a, b = 0, 1
+    newlist = [a]
+    while b < maxint:
         print(b)
         a, b = b, a+b
+        newlist.append(a)
+    return newlist
