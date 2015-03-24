@@ -17,10 +17,9 @@ def fibonacci(maxint):
         >>>task_01.fibonacci(10)
         [0,1,1,2,3,5,8]
     """
-    a, b = 0, 1
-    newlist = [a]
-    while b < maxint:
-        print b
-        a, b = b, a+b
-        newlist.append(a)
+    lastnum, curnum = 0, 1
+    newlist = [lastnum]
+    while curnum < maxint:
+        lastnum, curnum = curnum, lastnum+curnum
+        newlist.append(lastnum)
     return newlist
